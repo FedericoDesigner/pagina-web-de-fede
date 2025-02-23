@@ -1,0 +1,197 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tahoma;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #222; /* Negro grisáceo */
+    color: #ff6600;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #ff6600; /* Naranja oscuro */
+}
+
+/* Sección principal con imagen de fondo */
+.hero {
+    background: url('fondo.jpg') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.hero .overlay {
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* Botones */
+.boton {
+    display: inline-block;
+    padding: 12px 24px;
+    background: #ff6600; /* Naranja */
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton:hover {
+    background: #cc5200; /* Naranja oscuro */
+}
+
+/* Botón especial para Gmail */
+.boton.gmail {
+    background: #D93025; /* Rojo de Gmail */
+    margin-left: 10px;
+}
+
+.boton.gmail:hover {
+    background: #B1271B; /* Rojo más oscuro al pasar el mouse */
+}
+
+/* Botón especial para WhatsApp */
+.boton.whatsapp {
+    background: #25D366; /* Color verde de WhatsApp */
+    margin-left: 10px;
+}
+
+.boton.whatsapp:hover {
+    background: #1DA851; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Secciones */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #222; /* Gris oscuro */
+    color: white;
+}
+
+
+/* Sección de proyectos */
+
+.inicio {
+    background-color: #424242; /* Gris medio */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 1100px;
+}
+
+
+.inicio img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #ff6600; /* Borde naranja */
+}
+
+/* Sección de proyectos */
+.proyectos {
+    background-color: #424242; /* Gris medio */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 1100px;
+}
+
+.proyectos img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #ff6600; /* Borde naranja */
+}
+
+
+.proyectos mp4 {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #ff6600; /* Borde naranja */
+}
+
+
+/* Sección de sobre mi */
+.sobre {
+    background-color: #424242; /* Gris medio */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 1100px;
+}
+
+
+.sobre img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #ff6600; /* Borde naranja */
+}
+
+
+/* Sección de contacto */
+.contacto {
+    background-color: #424242; /* Negro grisáceo */
+    color: #444;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 1100px;
+}
+
+.contacto img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+    border: 3px solid #ff6600; /* Borde naranja */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+}
